@@ -14,16 +14,13 @@ public class Powerfn {
 
 				throw new Exception("n and p are zero");
 			}
-
 		}
 
 		for (int i = 0; i < pow.length; i++) {
 			res = Math.pow(bas[i], pow[i]);
 			//System.out.println(res);
 		}
-	
 	}
-
 	public static void main(String[] args)  {
 		Scanner sc = new Scanner(System.in);
 		int n1, n2;
@@ -41,14 +38,11 @@ public class Powerfn {
 			n2 = sc.nextInt();
 			pow[i] = n2;
 		}
-		
 			try {
 				Calc(bas, pow);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				System.out.println(e);
 			}
-		
 		}
-	
 }
