@@ -6,7 +6,8 @@ public class AppleOrg {
 	static void CApOrg(int s,int t,int a,int b,int[]ap,int[]or){
 		int c1=0,c2=0;
 		for (int i = 0; i < ap.length; i++) {
-			if((ap[i]>=(s-a))&&(ap[i]<=t)&&(ap[i]>=s)){
+			//if((ap[i]>=(s-a))&&(ap[i]<=t)&&(ap[i]>=s)){
+			if((ap[i]>=(s-a))){
 				c1++;
 			}
 		}
@@ -15,6 +16,7 @@ public class AppleOrg {
 				c2++;
 			}
 		}
+		
 		
 		System.out.println(c1+" "+c2);
 	}
@@ -41,6 +43,7 @@ public class AppleOrg {
 		for (int i = 0; i < or.length; i++) {
 			or[i]=sc.nextInt();
 		}
+	
 		CApOrg(s, t, a, b, ap, or);
 	}
 

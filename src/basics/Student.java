@@ -1,6 +1,8 @@
 package basics;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student implements Serializable{
 	private int rno;
 	private double fees;
 	private String name;

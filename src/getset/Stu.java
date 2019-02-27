@@ -1,6 +1,9 @@
 package getset;
+
+import java.io.Serializable;
+
 //POJO CLASS (Plain Obj Java Obj)
-public class Stu {
+public class Stu implements Serializable {
 	private int rno;
 	private double fees;
 	private String name;
